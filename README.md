@@ -1,7 +1,7 @@
 # elementary Dropbox Mods
 This script modifies Dropbox so that status icons will show in Wingpanel. It also optionally installs elementary themed Dropbox icons that better integrate with the system.
 
-## Before Your Install
+## Before You Install
 This script assumes that you have installed Dropbox from the [official website](https://dropbox.com/download), and have already launched the program at least once as well.
 
 **Important:** Don't install Dropbox from the Software Center or via apt-get. The versions in the repository are extremely outdated and will not work with this script.
@@ -31,7 +31,7 @@ to simply fix Dropbox so that the icons will display, or:
 
     sudo ./dropbox-elementary.sh
 
-which will give you the extra option of installing the elementary themed icons.
+which will give you the extra options of installing the elementary themed icons and restarting your system to complete installation.
 
 ## After installation
 

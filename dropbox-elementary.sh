@@ -89,3 +89,18 @@ dropbox stop
 dropbox start
 
 echo "elementary Dropbox modifications complete."
+echo "You may need to restart the system before the changes take effect."
+
+# If root, offer to reboot
+if [[ "$(id -u)" = "0" ]]; then
+	read -p "Would you like to restart now? (Y)es, (N)o : " INPUT
+	case $INPUT in
+		[Yy]* ) reboot -n;;
+		[Nn]* );;
+	    * )
+	    clear && echo "Sorry, try again." >&2
+	    main
+	    ;;
+	esac
+fi
+
